@@ -8,15 +8,28 @@ function monkeys() {
   console.log('No more monkeys jumping on the bed');
 }
 
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+// monkeys();
+
+function asterisks() {
+  console.log('*');
+  console.log('**');
+  console.log('***');
+  console.log('****');
+  console.log('*****');
+}
+
+asterisks();
 monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
-monkeys();
+asterisks();
+asterisks();
