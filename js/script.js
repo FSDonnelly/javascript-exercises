@@ -1,3 +1,4 @@
+// If else example
 let favouriteDrink = 'beer';
 
 if (favouriteDrink === 'coffee') {
@@ -20,3 +21,21 @@ a += 5;
 b--;
 c /= 2;
 console.log(a + b + c);
+
+//  For loop
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+for (let index = 40; index < 61; index++) {
+  console.log(index);
+}
+
+for (let k = 10; k >= 2; k--) {
+  console.log(k);
+}
+
+let word = 'Hello';
+for (let a = 0; a < word.length; a++) {
+  console.log(word[a]);
+}
