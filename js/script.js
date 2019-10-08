@@ -46,3 +46,13 @@ for (i = 1; i <= 10; i++) {
   let res = num * i;
   console.log(`${num} x ${i} = ${res}`);
 }
+
+let number1 = +prompt('enter first number', '');
+let number2 = +prompt('enter second number', '');
+let sum = 0;
+for (let k = number1; k <= number2; k++) {
+  if (k % 2 === 0) {
+    sum += k;
+  }
+}
+console.log(sum);
