@@ -14,3 +14,12 @@ while (budget >= bookPrice) {
   console.log(`I've bought a book!`);
 }
 console.log(`Rest: $${budget}`);
+
+let num = prompt('Enter a number', '');
+let i = 1;
+let sum = 0;
+while (i <= num) {
+  sum += i;
+  i++;
+}
+console.log(sum);
