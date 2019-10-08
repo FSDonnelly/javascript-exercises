@@ -1,33 +1,21 @@
-//While loop
+//  Prompt and typeof
+let x = 'Hello!';
 
-// let currentSum = 100;
-// while (currentSum <= 8000) {
-//   console.log(`I have $${currentSum}`);
-//   currentSum = currentSum + 1000;
-// }
-// console.log('Done');
+console.log(typeof x);
+x = 12;
+console.log(typeof x);
 
-// let bookPrice = 25;
-// let budget = 80;
-// while (budget >= bookPrice) {
-//   budget -= bookPrice;
-//   console.log(`I've bought a book!`);
-// }
-// console.log(`Rest: $${budget}`);
+console.log(typeof true);
 
-// let num = prompt('Enter a number', '');
-// let i = 1;
-// let sum = 0;
-// while (i <= num) {
-//   sum += i;
-//   i++;
-// }
-// console.log(sum);
+console.log(typeof null);
 
-let number = +prompt('Enter a number', ''); //prompt returns string unless '+' in front
-let sum = 0;
-while (number !== 0) {
-  sum += number;
-  number = +prompt('Enter a number', '');
-}
-console.log(sum);
+console.log(typeof undefined);
+
+// let p = prompt('Enter a text', '');
+// console.log(typeof p);
+
+// let q = +prompt('Enter a text', '');
+// console.log(typeof q);
+
+let y = prompt('Enter a text', ''); // Prompt always returns a string unless "+" preceeds
+console.log(y + 5);
