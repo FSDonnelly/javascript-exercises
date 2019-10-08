@@ -1,21 +1,22 @@
-//  Prompt and typeof
-let x = 'Hello!';
+// Functions without Arguments
 
-console.log(typeof x);
-x = 12;
-console.log(typeof x);
+function monkeys() {
+  console.log('Five little monkeys jumping on the bed');
+  console.log('One fell off and bumped his head');
+  console.log('Mama called the doctor,');
+  console.log('And the doctor said');
+  console.log('No more monkeys jumping on the bed');
+}
 
-console.log(typeof true);
-
-console.log(typeof null);
-
-console.log(typeof undefined);
-
-// let p = prompt('Enter a text', '');
-// console.log(typeof p);
-
-// let q = +prompt('Enter a text', '');
-// console.log(typeof q);
-
-let y = prompt('Enter a text', ''); // Prompt always returns a string unless "+" preceeds
-console.log(y + 5);
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
+monkeys();
