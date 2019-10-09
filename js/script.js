@@ -8,12 +8,20 @@ let x = 2;
 //   console.log(x);
 // }
 
+// function printX() {
+//   let x = 10;
+//   for (let x = 0; x <= 2; x++) {
+//     console.log(x);
+//   }
+//   console.log(x); // console prints 0,1,2,10
+// }
+
 function printX() {
-  let x = 10;
-  for (let x = 0; x <= 2; x++) {
+  x = 10;
+  for (x = 0; x <= 2; x++) {
     console.log(x);
   }
-  console.log(x);
+  console.log(x); // console prints 0,1,2,3
 }
 
 printX();
