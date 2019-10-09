@@ -1,23 +1,10 @@
 // Sandbox
-function byeFunc() {
-  console.log('Good bye!');
-}
+// Scope
+let x = 2;
 
-function greeting(func) {
-  //body...
-  func();
+function printX() {
+  let x = 10;
+  console.log(x);
 }
-
-// greeting(helloFunc); // Function that gets passed to another func is a CallBack
-greeting(byeFunc);
-
-// setInterval
-let counter = 0;
-function helloFunc() {
-  counter++;
-  if (counter === 10) {
-    clearInterval(interval);
-  }
-  console.log('Hello');
-}
-let interval = setInterval(helloFunc, 1000);
+x = x + 5;
+console.log(x);
