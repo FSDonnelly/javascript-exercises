@@ -9,9 +9,11 @@ function toCamelCase(str) {
       words[i][0].toUpperCase() + words[i].substring(1, words[i].length);
   }
   words[0] = words[0][0].toLowerCase() + words[0].substring(1, words[0].length);
-
-  console.log(words);
+  let result = words.join('');
+  return result;
 }
 
-let str = 'To be or not to be';
-toCamelCase(str);
+let str = prompt('Enter a sentence', '');
+let str2 = toCamelCase(str);
+
+console.log(str2);
