@@ -1,31 +1,22 @@
-// Functions witn Arguments
-function square(x) {
-  let result = x * x;
-  console.log(result);
+// Return
+function squeeze(fruit) {
+  let juice = fruit + ' juice';
+  return juice;
 }
 
-square(3);
-square(12);
+let juice = squeeze('orange');
 
-function area(length, width) {
-  let area = length * width;
-  console.log(area);
+function bake(ing) {
+  if (
+    ing.includes('orange juice') &&
+    ing.includes('flour') &&
+    ing.includes('eggs') &&
+    ing.includes('milk')
+  ) {
+    console.log('The cupcake has been baked!');
+  } else {
+    console.log('You do not have all the ingredients!');
+  }
 }
 
-area(20, 10);
-area(30, 20);
-
-let plane = 1100;
-let hotel = 800;
-let food = 600;
-
-function budget(plane, hotel, food) {
-  let total = plane + hotel + food;
-  let perDay = total / 14;
-  console.log(`Your vacation will cost you ${total}.`);
-  console.log(`Your daily cost is ${perDay}.`);
-}
-
-budget(plane, hotel, food);
-budget(1000, 700, 550);
-budget(1000, 1200, 700);
+bake([juice, 'milk', 'flour', 'eggs']);
