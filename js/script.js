@@ -1,35 +1,16 @@
-// Functions without Arguments
-
-function monkeys() {
-  console.log('Five little monkeys jumping on the bed');
-  console.log('One fell off and bumped his head');
-  console.log('Mama called the doctor,');
-  console.log('And the doctor said');
-  console.log('No more monkeys jumping on the bed');
+// Functions witn Arguments
+function square(x) {
+  let result = x * x;
+  console.log(result);
 }
 
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
-// monkeys();
+square(3);
+square(12);
 
-function asterisks() {
-  console.log('*');
-  console.log('**');
-  console.log('***');
-  console.log('****');
-  console.log('*****');
+function area(length, width) {
+  let area = length * width;
+  console.log(area);
 }
 
-asterisks();
-monkeys();
-asterisks();
-asterisks();
+area(20, 10);
+area(30, 20);
