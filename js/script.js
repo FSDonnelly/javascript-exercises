@@ -23,6 +23,12 @@ console.log(months);
 months.unshift('Jan'); // unshift to put element at start of array
 console.log(months);
 
+console.log(months.slice(1)); // copy array with slice(from) 1 arg will copy to the end
+console.log(months);
+
+console.log(months.slice(1, 4)); // copy array with slice(from, to)
+console.log(months);
+
 months.pop(); // remove last element of the array with pop()
 console.log(months);
 
