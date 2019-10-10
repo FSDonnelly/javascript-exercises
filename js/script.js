@@ -47,3 +47,9 @@ console.log(num);
 
 num.push(47);
 console.log(num);
+
+num.shift();
+console.log(num);
+
+num.unshift(69);
+console.log(num);
