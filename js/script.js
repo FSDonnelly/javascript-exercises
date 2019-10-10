@@ -14,3 +14,11 @@ console.log(array[2]);
 
 array[2] = true;
 console.log(array[2]);
+
+let months = ['Feb', 'Mar', 'Apr', 'May'];
+
+months.push('Jun'); // push to put element at end of array
+console.log(months);
+
+months.unshift('Jan'); // unshift to put element at start of array
+console.log(months);
