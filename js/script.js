@@ -23,6 +23,8 @@ console.log(months);
 months.unshift('Jan'); // unshift to put element at start of array
 console.log(months);
 
+console.log(months.slice()); //copy whole array
+
 console.log(months.slice(1)); // copy array with slice(from) 1 arg will copy to the end
 console.log(months);
 
@@ -53,3 +55,15 @@ console.log(num);
 
 num.unshift(69);
 console.log(num);
+
+// num.splice(2, 1);
+// console.log(num);
+
+console.log(num.indexOf(-4));
+
+let num2 = num.slice(1, 3);
+console.log(num2);
+
+num.push(100, 420, 3);
+num2 = num.slice(1);
+console.log(num2);
