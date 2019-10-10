@@ -22,3 +22,13 @@ console.log(months);
 
 months.unshift('Jan'); // unshift to put element at start of array
 console.log(months);
+
+months.pop(); // remove last element of the array with pop()
+console.log(months);
+
+months.shift(); // remove first element of the array with shift()
+console.log(months);
+
+console.log(months.indexOf('Apr')); // Find index of an element
+months.splice(2, 1); // remove element within the array splice(index, count)
+console.log(months);
