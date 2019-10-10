@@ -38,3 +38,12 @@ console.log(months);
 console.log(months.indexOf('Apr')); // Find index of an element
 months.splice(2, 1); // remove element within the array splice(index, count)
 console.log(months);
+
+let num = [1, -4, 6, 3.14];
+console.log(num.length); // .length to count the elements in the array
+
+num.pop();
+console.log(num);
+
+num.push(47);
+console.log(num);
