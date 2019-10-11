@@ -41,34 +41,68 @@ months.splice(2, 1); // remove element within the array splice(index, count)
 console.log(months);
 
 let num = [1, -4, 6, 3.14];
-// console.log(num.length); // .length to count the elements in the array
+console.log(num.length); // .length to count the elements in the array
 
-// num.pop();
-// console.log(num);
-
-// num.push(47);
-// console.log(num);
-
-// num.shift();
-// console.log(num);
-
-// num.unshift(69);
-// console.log(num);
-
-// num.splice(2, 1);
+num.pop();
 console.log(num);
 
-// console.log(num.indexOf(-4));
+num.push(47);
+console.log(num);
 
-// let num2 = num.slice(1, 3);
-// console.log(num2);
+num.shift();
+console.log(num);
 
-// num.push(100, 420, 3);
-// num2 = num.slice(1);
-// console.log(num2);
+num.unshift(69);
+console.log(num);
+
+num.splice(2, 1);
+console.log(num);
+
+console.log(num.indexOf(-4));
+
+let num2 = num.slice(1, 3);
+console.log(num2);
+
+num.push(100, 420, 3);
+num2 = num.slice(1);
+console.log(num2);
 let num2 = num.slice();
 console.log(num2);
 
 num[1] = -200;
 console.log(num);
 console.log(num2);
+
+let nums = [1, 2, 3, 4];
+let sum = 0;
+for (let i = 0; i < nums.length; i++) {
+  sum += nums[i];
+}
+console.log(sum);
+
+let nums2 = [1, 2, 3, 4];
+let sum2 = 0;
+nums2.forEach(function(el, index, array) {
+  sum2 += el;
+});
+console.log(sum2);
+
+let array = [11, 9, 8, 6, 0, 0, 3];
+
+let even = 0;
+let odd = 0;
+let zeros = 0;
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  if (element === 0) {
+    zeros++;
+  } else if (element % 2 === 0) {
+    even++;
+  } else {
+    odd++;
+  }
+}
+console.log(`Evens: ${even}`);
+console.log(`Odds: ${odd}`);
+console.log(`Zeros: ${zeros}`);
