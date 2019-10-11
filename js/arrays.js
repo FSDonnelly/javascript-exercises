@@ -106,3 +106,42 @@ for (let i = 0; i < array.length; i++) {
 console.log(`Evens: ${even}`);
 console.log(`Odds: ${odd}`);
 console.log(`Zeros: ${zeros}`);
+
+let array = [100, -2, 16, 41, 21, 0, 6, -4];
+
+let minVal = array[0];
+let maxVal = array[0];
+let minIndex = 0;
+let maxIndex = 0;
+
+for (let i = 1; i < array.length; i++) {
+  const element = array[i];
+  if (element < minVal) {
+    minVal = element;
+    minIndex = i;
+  } else if (element > maxVal) {
+    maxVal = element;
+    maxIndex = i;
+  }
+}
+console.log(`Min: ${minVal}; Index: ${minIndex}`);
+console.log(`Max: ${maxVal}; Index: ${maxIndex}`);
+
+//  Array iteration
+let array = ['John', 'Jacob', 'Daniel', 'Linda', 'Nancy', 'John'];
+
+let name = prompt('Enter a name', 'John');
+let counter = 0;
+
+for (let i = 0; i < array.length; i++) {
+  const el = array[i];
+  if (el === name) {
+    counter++;
+  }
+}
+
+if (counter === 1) {
+  console.log(`Name ${name}: ${counter} time`);
+} else {
+  console.log(`Name ${name}: ${counter} times`);
+}
