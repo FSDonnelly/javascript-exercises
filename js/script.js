@@ -29,3 +29,28 @@ if (person.age >= 18) {
 } else {
   console.log('Person is not an adult!');
 }
+
+//  Nested Objects
+let friends = [
+  {
+    name: 'Dimitri',
+    age: 43,
+    parents: ['Tom', 'Kate']
+  },
+  {
+    name: 'Daniel',
+    age: 28,
+    parents: ['Michael', 'Julia']
+  },
+  {
+    name: 'Mary',
+    age: 34
+  },
+  {
+    name: 'Alex',
+    age: 24
+  }
+];
+
+console.log(friends[1].parents[0]);
+console.log(friends[0]['parents'][1]);
