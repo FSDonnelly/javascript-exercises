@@ -9,4 +9,9 @@ let person = {
 };
 
 console.log(person.age);
+
+person.age++;
+person['lastname'] = 'Smith';
+
 console.log(person['age']);
+console.log(person['lastname']);
