@@ -31,11 +31,41 @@ if (person.age >= 18) {
 }
 
 //  Nested Objects
+// let friends = [
+//   {
+//     name: 'Dimitri',
+//     age: 43,
+//     parents: ['Tom', 'Kate']
+//   },
+//   {
+//     name: 'Daniel',
+//     age: 28,
+//     parents: ['Michael', 'Julia']
+//   },
+//   {
+//     name: 'Mary',
+//     age: 34
+//   },
+//   {
+//     name: 'Alex',
+//     age: 24
+//   }
+// ];
+
 let friends = [
   {
     name: 'Dimitri',
     age: 43,
-    parents: ['Tom', 'Kate']
+    parents: [
+      {
+        name: 'Tom',
+        age: 67
+      },
+      {
+        name: 'Kate',
+        age: 64
+      }
+    ]
   },
   {
     name: 'Daniel',
