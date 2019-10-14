@@ -94,5 +94,5 @@ let friends = [
 console.log(friends[1].parents[0]);
 console.log(friends[0]['parents'][1]);
 console.log(friends[0]['name']);
-console.log(friends[0].parents[0].name);
-console.log(friends[0]['parents'][0]['name']);
+console.log(friends[0].parents[0].name); // better
+console.log(friends[0]['parents'][0]['name']); // not recommended
