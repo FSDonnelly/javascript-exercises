@@ -70,7 +70,16 @@ let friends = [
   {
     name: 'Daniel',
     age: 28,
-    parents: ['Michael', 'Julia']
+    parents: [
+      {
+        name: 'Max',
+        age: 54
+      },
+      {
+        name: 'Jane',
+        age: 50
+      }
+    ]
   },
   {
     name: 'Mary',
@@ -84,3 +93,6 @@ let friends = [
 
 console.log(friends[1].parents[0]);
 console.log(friends[0]['parents'][1]);
+console.log(friends[0]['name']);
+console.log(friends[0].parents[0].name);
+console.log(friends[0]['parents'][0]['name']);
