@@ -28,3 +28,9 @@ console.dir(id);
 // querySelector() only finds first element that matches
 let query = document.querySelector('.red-text');
 console.dir(query);
+let query2 = document.querySelector('p:nth-of-type(2)'); // find specific element
+console.dir(query2);
+
+// querySelectorAll()
+let queryAll = document.querySelectorAll('p');
+console.dir(queryAll);
