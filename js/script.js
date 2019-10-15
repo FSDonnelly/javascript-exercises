@@ -20,3 +20,7 @@ console.dir(tag);
 // getElementsByClassName()
 let className = document.getElementsByClassName('red-text');
 console.dir(className);
+
+// getElementById()
+let id = document.getElementById('main');
+console.dir(id);
