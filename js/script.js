@@ -24,3 +24,7 @@ console.dir(className);
 // getElementById()
 let id = document.getElementById('main');
 console.dir(id);
+
+// querySelector() only finds first element that matches
+let query = document.querySelector('.red-text');
+console.dir(query);
