@@ -13,3 +13,6 @@ list.appendChild(task2); //place element at the end of array
 let firstElement = list.children[0]; //create var for element after insert point
 
 list.insertBefore(task, firstElement); //place element in array
+
+let element = list.children[1]; //create var to hold element to delete
+element.remove();
