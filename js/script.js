@@ -1,6 +1,7 @@
 // Sandbox
 //Events
 let btn = document.querySelector('.btn-primary');
+console.dir(btn); //List of functions or Google popular js functions
 let btn2 = document.querySelector('.btn-secondary');
 btn.onclick = function() {
   console.log(`You have clicked the button`);
@@ -9,3 +10,9 @@ btn.onclick = function() {
 btn2.onmouseover = function() {
   alert(`Your pointer is over the button`);
 };
+btn.addEventListener('click', () => {
+  console.log('Hello');
+});
+btn.addEventListener('click', () => {
+  console.log('Bye!');
+});
