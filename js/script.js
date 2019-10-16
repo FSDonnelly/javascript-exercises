@@ -23,7 +23,7 @@ let green = document.querySelector('.green');
 green.style.color = 'green';
 green.style.marginBottom = '30px';
 green.style.textTransform = 'uppercase';
-
+console.dir(green);
 let red = document.querySelector('.red');
 red.style.color = 'red';
 red.style.fontWeight = 'bold';
