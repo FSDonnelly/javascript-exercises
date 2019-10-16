@@ -16,3 +16,14 @@ list.insertBefore(task, firstElement); //place element in array
 
 let element = list.children[1]; //create var to hold element to delete
 element.remove();
+
+// Manipulating Style
+
+let green = document.querySelector('.green');
+green.style.color = 'green';
+green.style.marginBottom = '30px';
+green.style.textTransform = 'uppercase';
+
+let red = document.querySelector('.red');
+red.style.color = 'red';
+red.style.fontWeight = 'bold';
