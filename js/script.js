@@ -1,36 +1,15 @@
 // Sandbox
-// DOM
+// Creating and deleting elements
+let task = document.createElement('li');
+let task2 = document.createElement('li');
 
-console.dir(document);
-console.dir(window);
+task.textContent = 'task A';
+task2.textContent = 'task 3';
 
-// getElementByName()
-{
-  /* <h1 class="red-text">Greeting</h1>
-    <p class="red-text" id="main">Hello!</p>
-    <p class="green-text" name="wish">Have a nice day!</p> */
-}
-let name = document.getElementsByName('wish');
-console.dir(name);
+let list = document.getElementById('list');
 
-// getElementsByTagName()
-let tag = document.getElementsByTagName('p');
-console.dir(tag);
+list.appendChild(task2); //place element at the end of array
 
-// getElementsByClassName()
-let className = document.getElementsByClassName('red-text');
-console.dir(className);
+let firstElement = list.children[0]; //create var for element after insert point
 
-// getElementById()
-let id = document.getElementById('main');
-console.dir(id);
-
-// querySelector() only finds first element that matches
-let query = document.querySelector('.red-text');
-console.dir(query);
-let query2 = document.querySelector('p:nth-of-type(2)'); // find specific element
-console.dir(query2);
-
-// querySelectorAll()
-let queryAll = document.querySelectorAll('p');
-console.dir(queryAll);
+list.insertBefore(task, firstElement); //place element in array
