@@ -1,4 +1,3 @@
-// Sandbox
 //Events
 
 // <button class="btn-primary">Click Me!</button>
@@ -20,5 +19,3 @@ btn.addEventListener('click', () => {
 btn.addEventListener('click', () => {
   console.log('Bye!');
 });
-
-//Keyboard Events
