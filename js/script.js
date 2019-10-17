@@ -1,32 +1,10 @@
 // Sandbox
 
-//Keyboard Events
-let inp = document.querySelectorAll('input');
-let a = document.querySelector('a');
-console.log(inp);
-// inp.addEventListener('keyup', () => {
-//   console.log('keyup: ' + inp.value);
-// });
-
-// inp.addEventListener('keydown', () => {
-//   console.log('keydown: ' + inp.value);
-// });
-
-// inp.addEventListener('keypress', () => {
-//   console.log('keypress: ' + inp.value);
-// });
-for (let i = 0; i < inp.length; i++) {
-  const element = inp[i];
-  element.addEventListener('keyup', e => {
-    // console.log(e); // console keyboard event
-    // console.log('keyup: ' + element.value);
-    if (e.which == 13) {
-      console.log(element.value);
-    }
-  });
-}
-
-a.addEventListener('click', e => {
-  e.preventDefault();
-  alert('Boo! Happy Halloween!!');
-});
+// Random Number Generator
+let randomNumber = Math.random(); //random # [0,1)
+// Math.random() * max
+let three = Math.random() * 3; //random # [0,3)
+console.log(three);
+// Math.random() * (max - min) + min
+let minMax = Math.random() * (5 - 2) + 2; //random # [2,5)
+console.log(minMax);
