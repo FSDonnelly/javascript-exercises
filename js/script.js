@@ -8,3 +8,6 @@ console.log(three);
 // Math.random() * (max - min) + min
 let minMax = Math.random() * (5 - 2) + 2; //random # [2,5)
 console.log(minMax);
+// Math.floor(Math.random()*(max - min + 1) + min)
+let int = Math.floor(Math.random() * (15 - 2 + 1) + 2); //random integer (2,15)
+console.log(int);
