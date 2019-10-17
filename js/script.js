@@ -16,7 +16,8 @@ console.log(inp);
 // });
 for (let i = 0; i < inp.length; i++) {
   const element = inp[i];
-  element.addEventListener('keyup', () => {
+  element.addEventListener('keyup', e => {
+    console.log(e); // console keyboard event
     console.log('keyup: ' + element.value);
   });
 }
